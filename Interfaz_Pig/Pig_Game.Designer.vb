@@ -33,6 +33,8 @@ Partial Class Pig_Game
         Me.bt_db = New System.Windows.Forms.Button()
         Me.bt_ceder = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.pb_imagen = New System.Windows.Forms.PictureBox()
+        CType(Me.pb_imagen, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txt_jug1
@@ -128,11 +130,21 @@ Partial Class Pig_Game
         Me.Timer1.Enabled = True
         Me.Timer1.Interval = 2000
         '
+        'pb_imagen
+        '
+        Me.pb_imagen.Location = New System.Drawing.Point(500, 248)
+        Me.pb_imagen.Name = "pb_imagen"
+        Me.pb_imagen.Size = New System.Drawing.Size(90, 81)
+        Me.pb_imagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pb_imagen.TabIndex = 9
+        Me.pb_imagen.TabStop = False
+        '
         'Pig_Game
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(748, 413)
+        Me.Controls.Add(Me.pb_imagen)
         Me.Controls.Add(Me.bt_ceder)
         Me.Controls.Add(Me.bt_db)
         Me.Controls.Add(Me.txt_dado)
@@ -144,6 +156,7 @@ Partial Class Pig_Game
         Me.Controls.Add(Me.txt_jug1)
         Me.Name = "Pig_Game"
         Me.Text = "Pig Game :Gilberth"
+        CType(Me.pb_imagen, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -158,5 +171,6 @@ Partial Class Pig_Game
     Friend WithEvents bt_db As System.Windows.Forms.Button
     Friend WithEvents bt_ceder As System.Windows.Forms.Button
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents pb_imagen As System.Windows.Forms.PictureBox
 
 End Class
