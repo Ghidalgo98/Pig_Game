@@ -25,8 +25,8 @@ Partial Class Pig_Game
         Me.components = New System.ComponentModel.Container()
         Me.txt_jug1 = New System.Windows.Forms.TextBox()
         Me.txt_jug2 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lb_Jugador_1 = New System.Windows.Forms.Label()
+        Me.lb_jugador_2 = New System.Windows.Forms.Label()
         Me.bt_jugar = New System.Windows.Forms.Button()
         Me.bt_acomular = New System.Windows.Forms.Button()
         Me.txt_dado = New System.Windows.Forms.TextBox()
@@ -39,7 +39,7 @@ Partial Class Pig_Game
         '
         'txt_jug1
         '
-        Me.txt_jug1.Enabled = False
+        Me.txt_jug1.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.txt_jug1.Location = New System.Drawing.Point(50, 37)
         Me.txt_jug1.Name = "txt_jug1"
         Me.txt_jug1.ReadOnly = True
@@ -48,32 +48,32 @@ Partial Class Pig_Game
         '
         'txt_jug2
         '
-        Me.txt_jug2.Enabled = False
+        Me.txt_jug2.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.txt_jug2.Location = New System.Drawing.Point(449, 37)
         Me.txt_jug2.Name = "txt_jug2"
         Me.txt_jug2.ReadOnly = True
         Me.txt_jug2.Size = New System.Drawing.Size(100, 20)
         Me.txt_jug2.TabIndex = 1
         '
-        'Label1
+        'lb_Jugador_1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Arial Black", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(58, 9)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(101, 19)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "JUGADOR 1"
+        Me.lb_Jugador_1.AutoSize = True
+        Me.lb_Jugador_1.Font = New System.Drawing.Font("Arial Black", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lb_Jugador_1.Location = New System.Drawing.Point(58, 9)
+        Me.lb_Jugador_1.Name = "lb_Jugador_1"
+        Me.lb_Jugador_1.Size = New System.Drawing.Size(101, 19)
+        Me.lb_Jugador_1.TabIndex = 2
+        Me.lb_Jugador_1.Text = "JUGADOR 1"
         '
-        'Label2
+        'lb_jugador_2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Arial Black", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(476, 9)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(36, 19)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "PIG"
+        Me.lb_jugador_2.AutoSize = True
+        Me.lb_jugador_2.Font = New System.Drawing.Font("Arial Black", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lb_jugador_2.Location = New System.Drawing.Point(476, 9)
+        Me.lb_jugador_2.Name = "lb_jugador_2"
+        Me.lb_jugador_2.Size = New System.Drawing.Size(36, 19)
+        Me.lb_jugador_2.TabIndex = 3
+        Me.lb_jugador_2.Text = "PIG"
         '
         'bt_jugar
         '
@@ -97,7 +97,7 @@ Partial Class Pig_Game
         '
         'txt_dado
         '
-        Me.txt_dado.Enabled = False
+        Me.txt_dado.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.txt_dado.Location = New System.Drawing.Point(287, 182)
         Me.txt_dado.Multiline = True
         Me.txt_dado.Name = "txt_dado"
@@ -150,8 +150,8 @@ Partial Class Pig_Game
         Me.Controls.Add(Me.txt_dado)
         Me.Controls.Add(Me.bt_acomular)
         Me.Controls.Add(Me.bt_jugar)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lb_jugador_2)
+        Me.Controls.Add(Me.lb_Jugador_1)
         Me.Controls.Add(Me.txt_jug2)
         Me.Controls.Add(Me.txt_jug1)
         Me.Name = "Pig_Game"
@@ -163,8 +163,8 @@ Partial Class Pig_Game
     End Sub
     Friend WithEvents txt_jug1 As System.Windows.Forms.TextBox
     Friend WithEvents txt_jug2 As System.Windows.Forms.TextBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents lb_Jugador_1 As System.Windows.Forms.Label
+    Friend WithEvents lb_jugador_2 As System.Windows.Forms.Label
     Friend WithEvents bt_jugar As System.Windows.Forms.Button
     Friend WithEvents bt_acomular As System.Windows.Forms.Button
     Friend WithEvents txt_dado As System.Windows.Forms.TextBox
