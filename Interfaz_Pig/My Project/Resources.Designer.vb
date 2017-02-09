@@ -63,6 +63,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property _20cm_font_b_Toy_b_font_font_b_Story_b_font_Hamm_Piggy_Bank_Pink_font() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("20cm-font-b-Toy-b-font-font-b-Story-b-font-Hamm-Piggy-Bank-Pink-font", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property dado_face_1() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("dado_face_1", resourceCulture)
@@ -76,6 +86,16 @@ Namespace My.Resources
         Friend ReadOnly Property dado3() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("dado3", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property descarga() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("descarga", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

@@ -22,7 +22,6 @@ Partial Class Interfaz_Pig
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.cb_nivel = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lb_nombre = New System.Windows.Forms.Label()
         Me.txt_nombre = New System.Windows.Forms.TextBox()
@@ -32,18 +31,10 @@ Partial Class Interfaz_Pig
         Me.cb_juga = New System.Windows.Forms.ComboBox()
         Me.lb_jug2 = New System.Windows.Forms.Label()
         Me.txt_jugador_2 = New System.Windows.Forms.TextBox()
+        Me.cb_nivel = New System.Windows.Forms.ComboBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'cb_nivel
-        '
-        Me.cb_nivel.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.cb_nivel.FormattingEnabled = True
-        Me.cb_nivel.Items.AddRange(New Object() {"Experto", "Medio", "Novato", "Seleccione un nivel"})
-        Me.cb_nivel.Location = New System.Drawing.Point(156, 131)
-        Me.cb_nivel.Name = "cb_nivel"
-        Me.cb_nivel.Size = New System.Drawing.Size(121, 21)
-        Me.cb_nivel.Sorted = True
-        Me.cb_nivel.TabIndex = 0
         '
         'Label1
         '
@@ -57,7 +48,7 @@ Partial Class Interfaz_Pig
         'lb_nombre
         '
         Me.lb_nombre.AutoSize = True
-        Me.lb_nombre.Location = New System.Drawing.Point(12, 99)
+        Me.lb_nombre.Location = New System.Drawing.Point(13, 145)
         Me.lb_nombre.Name = "lb_nombre"
         Me.lb_nombre.Size = New System.Drawing.Size(57, 13)
         Me.lb_nombre.TabIndex = 2
@@ -65,15 +56,15 @@ Partial Class Interfaz_Pig
         '
         'txt_nombre
         '
-        Me.txt_nombre.Location = New System.Drawing.Point(156, 88)
+        Me.txt_nombre.Location = New System.Drawing.Point(156, 138)
         Me.txt_nombre.Name = "txt_nombre"
         Me.txt_nombre.Size = New System.Drawing.Size(121, 20)
-        Me.txt_nombre.TabIndex = 3
+        Me.txt_nombre.TabIndex = 0
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 134)
+        Me.Label3.Location = New System.Drawing.Point(12, 190)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(85, 13)
         Me.Label3.TabIndex = 4
@@ -91,7 +82,7 @@ Partial Class Interfaz_Pig
         'lb_jug
         '
         Me.lb_jug.AutoSize = True
-        Me.lb_jug.Location = New System.Drawing.Point(13, 180)
+        Me.lb_jug.Location = New System.Drawing.Point(12, 80)
         Me.lb_jug.Name = "lb_jug"
         Me.lb_jug.Size = New System.Drawing.Size(105, 13)
         Me.lb_jug.TabIndex = 6
@@ -100,17 +91,18 @@ Partial Class Interfaz_Pig
         'cb_juga
         '
         Me.cb_juga.AllowDrop = True
+        Me.cb_juga.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cb_juga.FormattingEnabled = True
         Me.cb_juga.Items.AddRange(New Object() {"Seleccione modalidad de Juego", "Contra Pig", "Contra Otro Jugador"})
-        Me.cb_juga.Location = New System.Drawing.Point(156, 180)
+        Me.cb_juga.Location = New System.Drawing.Point(156, 77)
         Me.cb_juga.Name = "cb_juga"
         Me.cb_juga.Size = New System.Drawing.Size(121, 21)
-        Me.cb_juga.TabIndex = 7
+        Me.cb_juga.TabIndex = 0
         '
         'lb_jug2
         '
         Me.lb_jug2.AutoSize = True
-        Me.lb_jug2.Location = New System.Drawing.Point(306, 88)
+        Me.lb_jug2.Location = New System.Drawing.Point(302, 138)
         Me.lb_jug2.Name = "lb_jug2"
         Me.lb_jug2.Size = New System.Drawing.Size(57, 13)
         Me.lb_jug2.TabIndex = 8
@@ -119,17 +111,39 @@ Partial Class Interfaz_Pig
         '
         'txt_jugador_2
         '
-        Me.txt_jugador_2.Location = New System.Drawing.Point(369, 81)
+        Me.txt_jugador_2.Location = New System.Drawing.Point(404, 138)
         Me.txt_jugador_2.Name = "txt_jugador_2"
         Me.txt_jugador_2.Size = New System.Drawing.Size(121, 20)
-        Me.txt_jugador_2.TabIndex = 9
+        Me.txt_jugador_2.TabIndex = 2
         Me.txt_jugador_2.Visible = False
+        '
+        'cb_nivel
+        '
+        Me.cb_nivel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cb_nivel.FormattingEnabled = True
+        Me.cb_nivel.Items.AddRange(New Object() {"Seleccione un nivel de dificultad", "Novato", "Medio", "Experto"})
+        Me.cb_nivel.Location = New System.Drawing.Point(156, 190)
+        Me.cb_nivel.Name = "cb_nivel"
+        Me.cb_nivel.Size = New System.Drawing.Size(121, 21)
+        Me.cb_nivel.TabIndex = 9
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.Interfaz_Pig.My.Resources.Resources.descarga
+        Me.PictureBox1.Location = New System.Drawing.Point(383, 223)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(171, 106)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 10
+        Me.PictureBox1.TabStop = False
         '
         'Interfaz_Pig
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(759, 374)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.cb_nivel)
         Me.Controls.Add(Me.txt_jugador_2)
         Me.Controls.Add(Me.lb_jug2)
         Me.Controls.Add(Me.cb_juga)
@@ -139,9 +153,9 @@ Partial Class Interfaz_Pig
         Me.Controls.Add(Me.txt_nombre)
         Me.Controls.Add(Me.lb_nombre)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.cb_nivel)
         Me.Name = "Interfaz_Pig"
         Me.Text = "Interfaz_Pig"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -155,5 +169,6 @@ Partial Class Interfaz_Pig
     Friend WithEvents cb_juga As System.Windows.Forms.ComboBox
     Friend WithEvents lb_jug2 As System.Windows.Forms.Label
     Friend WithEvents txt_jugador_2 As System.Windows.Forms.TextBox
-    Private WithEvents cb_nivel As System.Windows.Forms.ComboBox
+    Friend WithEvents cb_nivel As System.Windows.Forms.ComboBox
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class
